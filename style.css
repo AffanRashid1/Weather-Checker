@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 50px 30px;
+    border: 2px solid cyan;
+    box-shadow: 0px 13px 27px -5px cyan , 0px 8px 16px -8px cyan , 0px -6px 16px -6px cyan;
+    border-radius: 10px;
+}
+
+.container img{
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container input{
+    border: none;
+    outline: none;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding: 5px 9px;
+    background-color: transparent;
+    caret-color: cyan;
+}
+
+input::placeholder{
+    color: cyan;
+}
+
+h1 , h4 , h3, h5{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 30px;   
+}
+
+h5{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.tag{
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 13px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        border: none;
+        box-shadow: none;
+    }
+    .container input{
+        box-shadow: 0 2px 4px -1px cyan, 0 4px 5px 0 cyan, 0 1px 20px 0 cyan;
+        margin: 32px 0;
+    }
+    .tag{
+        font-size: 7px;
+        bottom: 4px;
+    }
+    h3{
+        font-size: 40px;
+    }
+}
+
+
